@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<body>
+    <h1>Voce e Brasileiro?</h1>
+    Em qual pais voce mora <input type="text" name="pa" id="pa">
+
+    <input type="button" value="Enviar" onclick="verificar()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verificar() {
+        var pais = window.document.getElementById('pa')
+        var res = window.document.getElementById('res')
+        
+        res.innerHTML = `<p>Sua velocidade e de <strong>${pa}km/h</strong></p>`
+        if (pais == Brasil) {
+            res.innerHTML += `<p>Voce passou o limite de velocidade. <strong>MULTADO</strong></p>`
+        }
+            res.innerHTML += `<p>Dirija sempre com cinto de segurança</p>`  
+        }
+    </script>
+</body>
+</html>
