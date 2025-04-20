@@ -30,24 +30,26 @@
                 img.setAttribute('src', 'img/idoso.png')
             }
         }
-        if (idade >= 0 && idade < 10) {
-            // Crinça
-            img.setAttribute('src', 'img/bebef.png')
-        }else if (idade  < 21) {
-            //jovem
-            img.setAttribute('src', 'img/jovemf.png')
-        } else if (idade < 50){
-            //adulto
-            img.setAttribute('src', 'img/adulta.png')
-        }else {
-            //idoso
-            img.setAttribute('src', 'img/idosa.png')
+        if (fsex[1].checked) {
+            gen = 'Mulher'
+            if (idade >= 0 && idade < 10) {
+                // Crinça
+                img.setAttribute('src', 'img/bebef.png')
+            }else if (idade  < 21) {
+                //jovem
+                img.setAttribute('src', 'img/jovemf.png')
+            } else if (idade < 50){
+                //adulto
+                img.setAttribute('src', 'img/adulta.png')
+            }else {
+                //idoso
+                img.setAttribute('src', 'img/idosa.png')
+            }
         }
-    }
         res.style.textAlign = 'center'
         res.innerHTML = `Detectamos ${gen} com ${idade} anos`
         res.appendChild(img)
         res.style.textAlign = 'center'
     }
     
- 
+}
