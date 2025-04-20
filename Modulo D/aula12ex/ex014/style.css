@@ -12,9 +12,13 @@ section {
     padding: 15px;
     width: 500px;
     margin: auto;
-    color: white;   
+    color: black;   
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.377);
 }   
+div {
+    text-align: center;
+    padding: 8px;
+}
 footer {
     color: white;
     text-align: center;
